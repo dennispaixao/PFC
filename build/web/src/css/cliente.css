@@ -1,0 +1,130 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19/11/2018, 22:02:01
+    Author     : Dennis
+*/
+
+
+body{
+    width:100%;
+    max-width: 100%;
+    height:100%;
+    text-align: center;
+    background:#fffffc;
+    color:#333;
+    font-family: arial;
+
+    
+}
+h1{
+    margin-top: 65px;    
+    margin-bottom:  20px;    
+    color:#333;
+    font-family: ms sans serif;
+    font-size: 40px;
+    text-align: left;
+
+}
+a{ text-decoration: none ;color:white;}
+a:hover{ color:#eee; filter: drop-shadow(0 0 1.15rem #fff); }
+
+#listarh1{
+    float:left;
+    position:inherit;
+}
+#box-form{
+    width:100%;
+    height:auto;
+    text-align: right; width:600px; margin:0 auto; max-width: 100%; font-size: 20px;
+    padding-right:100PX;
+}
+
+#box-form form input[type="text"]{height:30px; margin-top: 10px; font-size: 21px;}
+#box-form form input[type="text"]:focus{background:#f2ff68}
+#box-form form input:hover{filter: drop-shadow(0 0 0.25rem cyan);}
+#box-form form input[type="submit"],#box-form form input[type="button"] {
+    margin-top: 20px;
+    width:220px;
+    height:35px;
+    font-size: 16px;
+    font-weight: bold;
+    border-top:1px solid #FF8;
+    border-right:1px solid #ff8;
+    border-left:2px solid #ccc;
+    border-bottom:2px solid #ccc;
+    background-color: #fff;
+    color:#000;
+}
+
+form input[type="submit"]:hover,form input[type="button"]:hover {
+    cursor:pointer;
+  
+}
+#box-form input[type="radio"]{
+    margin: 5px;
+}
+#mensagem{
+    position: fixed;
+    opacity:0;
+    max-width: 100%;
+    width:500px;
+    margin:0 auto;
+    text-align: center;
+    bottom:20%;
+    left:50%;
+    margin-left: -250px;
+    transition: 1s;
+    animation: fadeIn 4s ease 1;
+    color:yellow;
+    filter: drop-shadow(0 0 0.15rem crimson);
+    font-family: arial;
+    font-size: 20px;
+    z-index: 100;
+}
+
+#voltar{
+    color:#333;
+    width:100%;
+    text-align: right;
+    margin-top:25px;
+    font-size: 25px;
+}
+
+
+#voltar a:hover{
+    color:#fff;
+}
+
+#saudacao{
+    position:fixed;
+    color:#666;
+    border-radius: 0px 0px 20px 0px;
+    background-color: #ccc;
+    font-size: 15px;
+    text-align: left;
+    bottom:20px;
+    left:20px;
+}
+
+#camposOrcamento{color:black; }
+
+@keyframes mensagem{
+    0%{opacity:0.5;}
+    5%{opacity:1;}
+    99%{opacity:1;}
+    100%{opacity:0;}
+    
+}
+
+
+@keyframes fadeIn{
+    0%{opacity:0}
+    90%{opacity:1}  
+    100%{opacity:0}
+}
+
+

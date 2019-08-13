@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>BuscarItensOrcamentoAjax</servlet-name>
+        <servlet-class>br.com.artenativa.ajax.BuscarItensOrcamentoAjax</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>BuscarItensOrcamentoAjax</servlet-name>
+        <url-pattern>/BuscarItensOrcamentoAjax</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>GerarOrcamentoAjax</servlet-name>
+        <servlet-class>br.com.artenativa.ajax.GerarOrcamentoAjax</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>GerarOrcamentoAjax</servlet-name>
+        <url-pattern>/GerarOrcamentoAjax</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>BuscarListaOrcamentosAjax</servlet-name>
+        <servlet-class>br.com.artenativa.ajax.BuscarListaOrcamentosAjax</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>BuscarListaOrcamentosAjax</servlet-name>
+        <url-pattern>/BuscarListaOrcamentosAjax</url-pattern>
+    </servlet-mapping>
+    
+    
+        
+    <servlet>
+        <servlet-name>ExcluirOrcamentoAjax</servlet-name>
+        <servlet-class>br.com.artenativa.ajax.ExcluirOrcamentoAjax</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ExcluirOrcamentoAjax</servlet-name>
+        <url-pattern>/ExcluirOrcamentoAjax</url-pattern>
+    </servlet-mapping>
+    
+    
+     <servlet>
+        <servlet-name>AlterarOrcamentoAjax</servlet-name>
+        <servlet-class>br.com.artenativa.ajax.AlterarOrcamentoAjax</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>AlterarOrcamentoAjax</servlet-name>
+        <url-pattern>/AlterarOrcamentoAjax</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+      <servlet>
+        <servlet-name>RecuperarItensOrcamentoAjax</servlet-name>
+        <servlet-class>br.com.artenativa.ajax.RecuperarItensOrcamentoAjax</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>RecuperarItensOrcamentoAjax</servlet-name>
+        <url-pattern>/RecuperarItensOrcamentoAjax</url-pattern>
+    </servlet-mapping>
+ 
+    
+        <servlet>
+        <servlet-name>InserirPagamentoAjax</servlet-name>
+        <servlet-class>br.com.artenativa.ajax.InserirPagamentoAjax</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>InserirPagamentoAjax</servlet-name>
+        <url-pattern>/InserirPagamentoAjax</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AprovarOrcamentoAjax</servlet-name>
+        <servlet-class>br.com.artenativa.ajax.AprovarOrcamentoAjax</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>AprovarOrcamentoAjax</servlet-name>
+        <url-pattern>/AprovarOrcamentoAjax</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>BuscarListaEstoqueAjax</servlet-name>
+        <servlet-class>br.com.artenativa.ajax.BuscarListaEstoqueAjax</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>BuscarListaEstoqueAjax</servlet-name>
+        <url-pattern>/BuscarListaEstoqueAjax</url-pattern>
+    </servlet-mapping>
+        
+     <servlet>
+        <servlet-name>AlterarQtEstoqueAjax</servlet-name>
+        <servlet-class>br.com.artenativa.ajax.AlterarQtEstoqueAjax</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>AlterarQtEstoqueAjax</servlet-name>
+        <url-pattern>/AlterarQtEstoqueAjax</url-pattern>
+    </servlet-mapping>
+              
+       <servlet>
+        <servlet-name>AlterarPadraoEstoqueAjax</servlet-name>
+        <servlet-class>br.com.artenativa.ajax.AlterarPadraoEstoqueAjax</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>AlterarPadraoEstoqueAjax</servlet-name>
+        <url-pattern>/AlterarPadraoEstoqueAjax</url-pattern>
+    </servlet-mapping>
+    
+      
+     <servlet>
+        <servlet-name>GerenciarOrcamentoProducao</servlet-name>
+        <servlet-class>br.com.artenativa.ajax.GerenciarOrcamentoProducao</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>GerenciarOrcamentoProducao</servlet-name>
+        <url-pattern>/GerenciarOrcamentoProducao</url-pattern>
+    </servlet-mapping>
+    
+      <servlet>
+        <servlet-name>AlterarStatusItemOrcamentoAjax</servlet-name>
+        <servlet-class>br.com.artenativa.ajax.AlterarStatusItemOrcamentoAjax</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name> AlterarStatusItemOrcamentoAjax</servlet-name>
+        <url-pattern>/AlterarStatusItemOrcamentoAjax</url-pattern>
+    </servlet-mapping>  
+    
+        
+    <servlet>
+        <servlet-name>LiberarEntregaOrcamentoAjax</servlet-name>
+        <servlet-class>br.com.artenativa.ajax.LiberarEntregaOrcamentoAjax</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name> LiberarEntregaOrcamentoAjax</servlet-name>
+        <url-pattern>/LiberarEntregaOrcamentoAjax</url-pattern>
+    </servlet-mapping> 
+    
+        
+    <servlet>
+        <servlet-name>FinalizarOrcamentoAjax</servlet-name>
+        <servlet-class>br.com.artenativa.ajax.FinalizarOrcamentoAjax</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>FinalizarOrcamentoAjax</servlet-name>
+        <url-pattern>/FinalizarOrcamentoAjax</url-pattern>
+    </servlet-mapping> 
+       
+                 
+        <session-config>
+            <session-timeout>
+                30
+            </session-timeout>
+        </session-config>
+
+    
+</web-app>

@@ -1,0 +1,131 @@
+
+*{
+    margin:0;
+    padding:0;
+}#menu-principal{
+    width:100%;
+    height:20px;
+    font-family: Verdana;
+    font-size: 20px;
+    padding-top:  20px;
+    padding-bottom: 20px;
+    background-color:#888;
+    max-width: 100%;
+    text-align: center;
+    position: inherit;
+    z-index: 10;
+}#menu-principal ul a{
+    text-decoration: none;
+    color: #333;
+}#menu-principal ul a:visited{
+    color: #fff;
+}#menu-principal ul{
+    width:900px;
+    text-align: center;
+    max-width: 100%;
+    float:right;
+    position:absolute;
+}#menu-principal ul li{
+    width:auto;
+    margin-right: 50px;
+    display:inline-block;
+    text-align: left;
+    color:white;
+    background:gray;
+    transition:0.3s;
+}#menu-principal ul li:last-child{
+    text-align: center;
+
+}
+#menu-principal ul li ul{
+    width:200px;
+
+
+}
+#menu-principal ul li ul li{
+    display: none;
+    color:#fff;
+    background-color:#934b00;
+    transition:0.2s;
+    text-align: left !important;
+}#menu-principal ul li:hover{
+    color:#fff;
+}#menu-principal ul li:hover ul li{
+    display:block; 
+}#menu-principal ul li ul li:hover{
+    color:#fff;
+    border-left:6px solid white;  
+}#menu-principal ul li input{
+    width:100px;
+    height: 30px;
+    border-radius:30px;
+    background: red;
+    font-size: 17px;
+    cursor:pointer;
+    color:white;
+    border:none;
+    transition: 0.3s;
+}#menu-principal ul li input:hover{
+    background:orange;
+    transform: scale(1.05);
+}#menu-principal ul li input:active{
+    background: #ccc;
+    transform: scale(0.95);
+}#menu-principal div{
+    width:900px;
+    height:100px;
+    margin:0 auto;
+    text-align: right;
+}
+#logo-menu:hover{
+    transform:scale(1.2);   
+    position: fixed;
+}
+#logo-menu{
+    width:40px;
+    height:40px;
+    position:absolute;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    transition:2s;
+
+}
+@media only screen and (max-width:600px){  
+    #menu-principal ul{ 
+        width:150px;
+        position: absolute;
+        background:#888;
+        right:0px;
+        top:5px;
+        color:white;   
+    }#menu-principal ul li{
+        text-align: right;
+        margin-top:10px;
+        border-radius: 3px;
+        transition:1s;
+    }#menu-principal ul li:last-child{
+        float:right;
+    }#menu-principal ul li input{
+        border-radius: 3px;
+        transform:scale(0.8);
+        z-index: -1;
+    }#menu-principal ul li ul{
+        text-align: left;
+        transition:1s;   
+    }#menu-principal ul li:hover ul {
+        z-index: 100;
+        height:100%;   
+    }#logo-menu{
+        width:40px;
+        height:40px;
+
+        background-image: url('logoMenu.png');
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        transition:2s;
+        top:-10px;
+    }

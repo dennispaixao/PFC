@@ -1,0 +1,155 @@
+*{margin:0; padding:0; transition:0.3s;} 
+
+tr:hover td{background: yellow;  filter: drop-shadow(0 0 1.1rem yellow);}
+tr th:nth-child(1){width:40px; }
+
+tr th{text-align: center;}
+tr th:not(:nth-child(1)) {background: #ffffcc; }
+tr th:nth-child(2){ width:80px;}
+tr th:nth-child(3){ width:120px;}
+tr th:nth-child(4){   width:80px;}
+tr th:nth-child(5){   width:120px;}
+#container img{
+    width: 30px;
+    height:30px;
+    background-size: 100%;
+    opacity:0.5;
+    filter: grayscale(100%);
+}
+#container img:hover{
+    opacity:1;
+    filter: none;
+}
+#container{
+    width:100%;
+    max-width: 100%;
+    margin:0 auto;
+    text-align: center;
+    color:black;
+}
+#container p{
+  width:100%; 
+  margin:30px 0 30px 0;
+  font-size: 40px;
+  color:#fff;
+}
+
+
+#container a{
+    color:white;
+    text-decoration: none;
+
+    
+}
+#container a:hover{
+    color:#ddd;
+}
+
+#container textarea{
+    font-family: verdana;
+    font-size: 14px;
+    width:100%;
+    height:100px;
+    max-height: 100px;
+    min-height: 100px;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+#container table{
+    width:100%;
+    border:none;
+    background: white;
+    text-align: right;
+    left:0;
+    z-index: 200;
+    
+}
+#container tr{
+    width: 100%;
+    background: #fefefe;
+}
+
+#container tr td{
+    overflow: hidden;
+}
+
+#container tr td:last-child{
+    text-align: center;
+}
+
+
+#mensagem{
+    width:100%;
+    opacity:0;
+    transition: 1s;
+    animation: fadeIn 5s ease 1;
+    color:#888;
+}
+
+#itens{
+    width:320px;
+    max-width: 100%;
+    display:none;
+    max-height: 100px;
+    margin-bottom: 50px;
+    overflow:scroll; 
+    overflow-x:hidden;
+    float:right;
+    position:absolute;
+     
+} 
+
+
+input[type="button"]{
+margin:5px;
+background:#a2c357;
+font-weight: bold;
+font-size: 20px;
+text-align: center;
+} 
+input[type="button"]:hover{
+cursor:pointer;
+background:#33ff33;
+} 
+
+#tabela-orcamento{
+    width:100%;
+    max-width: 100%;    
+    display:none;
+
+    float:right;
+    margin-bottom:50px;
+}
+#tabela-orcamento tr td, #tabela-orcamento tr th{
+    background: #eee;
+    color:#222;
+}
+
+#tabela-orcamento tr:hover td{
+    background: yellow;
+
+}
+#total-orcamento{
+    width:100px;
+    font-size:22px;
+    background:lightgreen;
+    color:#333;
+    
+    
+}
+
+@keyframes mensagem{
+    0%{opacity:0}
+    20%{opacity:1}
+    80%{opacity:1}
+    100%{opacity:0}
+    
+}
+
+
+@keyframes fadeIn{
+    0%{opacity:0}
+    90%{opacity:1}  
+    100%{opacity:0}
+}
